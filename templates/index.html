@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>UDJ</title>
+</head>
+
+<!--<body style="background-color:#141717;">-->
+<body>
+
+{% include "includes/navA.html" %}
+
+{% block content %}
+    <h1>{% block title %} Welcome to UDJ {% endblock %}</h1>
+    <img src="{{ url_for('static',filename='images/run.jpg') }}">
+<!--    <img src="static/images/run.jpg" class="img-fluid col-lg-4">-->
+
+    <button class="collapsible">Menu</button>
+
+
+
+
+{% endblock %}
+
+</body>
+</html>
