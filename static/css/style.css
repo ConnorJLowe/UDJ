@@ -1,6 +1,48 @@
 h1 {
-    border: 2px #eee solid;
-    color: brown;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
+}
+
+h2 {
+    color: white;
+    font-family: Arial;
+}
+
+.form-rounded {
+border-radius: 1rem;
+}
+
+form{
+    align-content: center;
+    text-align: center;
+    padding: 25px;
+}
+
+label {
+    color: white;
+    font-size:70px;
+    width: 1000px;
+    font-family: Arial;
+    border-radius: 1rem;
+
+
+}
+
+input {
+    font-size: 50px;
+    font-family: Arial;
+    height: 100px;
+    width: 750px;
+    align-content: center;
+    padding-left: 10px;
+
+}
+
+button {
+    padding-right: 20px;
+    color: black;
+    font-size:50px;
+    font-family: Arial;
+    border-radius: 1rem;
+    text-align: center;
 }

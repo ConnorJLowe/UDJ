@@ -20,13 +20,13 @@
   background-color: #555;
 }
 
-.collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
+/*.collapsible:after {*/
+/*  content: '\002B';*/
+/*  color: white;*/
+/*  font-weight: bold;*/
+/*  float: right;*/
+/*  margin-left: 5px;*/
+/*}*/
 
 .active:after {
   content: "\2212";
@@ -70,17 +70,17 @@
 <!--var coll = document.getElementsByClassName("collapsible");-->
 <!--var i;-->
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
+<!--for (i = 0; i < coll.length; i++) {-->
+<!--  coll[i].addEventListener("click", function() {-->
+<!--    this.classList.toggle("active");-->
+<!--    var content = this.nextElementSibling;-->
+<!--    if (content.style.maxHeight){-->
+<!--      content.style.maxHeight = null;-->
+<!--    } else {-->
+<!--      content.style.maxHeight = content.scrollHeight + "px";-->
+<!--    }-->
+<!--  });-->
+<!--}-->
 </script>
 
 </body>

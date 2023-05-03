@@ -1,27 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
     <title>UDJ</title>
 </head>
 
-<!--<body style="background-color:#141717;">-->
-<body>
+<body style="background-color:#18181f;">
 
 {% include "includes/navA.html" %}
 
 {% block content %}
-    <h1>{% block title %} Welcome to UDJ {% endblock %}</h1>
-    <img src="{{ url_for('static',filename='images/run.jpg') }}">
-<!--    <img src="static/images/run.jpg" class="img-fluid col-lg-4">-->
+    <h1 style="color:#8824D9FF; font-family:monospace; font-size: 50px;">Welcome to UDJ, please login to continue</h1>
 
-    <button class="collapsible">Menu</button>
+    <form method="post">
 
+<br>
+        <label for="username">Username
 
+        <br>
+            <input class="form-rounded" type="text" name="user_id"
+            placeholder="Username"
+            value="{{ request.form['user_id'] }}">
+        </label>
+<br>
+<br>
+<br>
+<br>
+        <label for="password">Password
+        <br>
 
+            <input class="form-rounded justify-content-center" type="password" name="password"
+            placeholder="Password"
+            value="{{ request.form['password'] }}">
+         </label>
+<!--       -->
+<br>
+        <button type="submit">Submit</button>
+    </form>
+
+<div class="container">
+  <div class="row">
+    <div class="col text-center">
+<button style="background-color: mediumpurple; font-size: 65px; color: white" type="submit">CONTINUE AS GUEST</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <button class="btn btn-default">Centered button</button>
+    </div>
+  </div>
+</div>
+
+<!doctype html>
+<html>
+  <head>
+    <title>Music Albums Search</title>
+  </head>
+  <body>
+    <h1>Search for Music Albums</h1>
+    <form action="/" method="post">
+      <label for="artist">Artist Name:</label>
+      <input type="text" name="artist" required>
+      <button type="submit">Search</button>
+    </form>
+  </body>
+</html>
 
 {% endblock %}
+
+
 
 </body>
 </html>
